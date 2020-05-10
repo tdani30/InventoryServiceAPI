@@ -24,6 +24,7 @@ namespace InventoryService
     {
         public void OnAuthorization(AuthorizationFilterContext context)
         {
+            //
             Microsoft.Extensions.Primitives.StringValues authTokens;
             bool IsAuthenticated = context.HttpContext.User.Identity.IsAuthenticated;
            // context.HttpContext.Request.Headers.TryGetValue("authToken", out1 authTokens);
